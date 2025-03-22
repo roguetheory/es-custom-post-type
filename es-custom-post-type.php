@@ -112,7 +112,7 @@ use Ethersense\EsCustomPostType\EsCustomPostType;
 //];
 
 $custom_post_types = [];
-new EsCustomPostType($custom_post_types, __FILE__);
+new EsCustomPostType(__FILE__, $custom_post_types);
 
 
 

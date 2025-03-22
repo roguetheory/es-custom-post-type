@@ -6,7 +6,11 @@ class EsCustomPostType
 {
     protected array $postTypes = [];
 
-    public function __construct(array $postTypes = [], string $filename)
+    /**
+     * @param string $filename
+     * @param array $postTypes
+     */
+    public function __construct(string $filename, array $postTypes = [])
     {
         $this->postTypes = $postTypes;
         add_action('init', array($this, 'registerPostTypes'));
